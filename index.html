@@ -3,9 +3,17 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>ECMA SCRIPT 6 Features</title>
 </head>
-<body>
-<div><h1>Hello</h1></div>
+<body onload="loadJs()">
+    <div><input type="button" value="Make Promise" onclick="page.makePromise()" /></div>
+<script>
+    function loadJs() {
+        var fileref = document.createElement('script');
+        fileref.setAttribute("type", "text/javascript");
+        fileref.setAttribute("src", "/client.js?a="+new Date().getTime());
+        document.getElementsByTagName("head")[0].appendChild(fileref);
+    }
+</script>
 </body>
 </html>
