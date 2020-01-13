@@ -1,6 +1,7 @@
 var page = (function() {
 
-    var makePromise = function() {
+    var makePromise = function () {
+        //States : pending, fulfilled, rejected
         var p = new Promise(function(resolve, reject) {
             setTimeout(function() {
                     var rand = Math.random();
@@ -17,6 +18,8 @@ var page = (function() {
             alert(value);
         }).catch(function (value) {
             alert(value);
+        }).finally(function() {
+            console.log("Set loading to dismiss in finally");
         });
     };
 

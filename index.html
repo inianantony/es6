@@ -9,10 +9,13 @@
     <div><input type="button" value="Make Promise" onclick="page.makePromise()" /></div>
 <script>
     function loadJs() {
-        var fileref = document.createElement('script');
-        fileref.setAttribute("type", "text/javascript");
-        fileref.setAttribute("src", "/client.js?a="+new Date().getTime());
-        document.getElementsByTagName("head")[0].appendChild(fileref);
+        var files = ["promise"];
+        for (var index in files) {
+            var element = document.createElement('script');
+            element.setAttribute("type", "text/javascript");
+            element.setAttribute("src", `/${files[index]}.js?a=${new Date().getTime()}`);
+            document.getElementsByTagName("head")[0].appendChild(element);
+        }
     }
 </script>
 </body>
