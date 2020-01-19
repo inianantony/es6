@@ -36,7 +36,8 @@ var page = (function () {
 
         //ALL
         Promise.all([p, p1]).then(function (values) {
-            console.log("Promise.all is completed when all the promise is completed in the order of the array");
+            console.log("Promise.all is completed when all the promise is completed in the order of the array and the result is an array passed to the then function");
+            console.log(typeof(values));
             console.log(values);
 
         }).catch(function (values) {
@@ -61,7 +62,9 @@ var page = (function () {
                     1000);
             });
         }
-        ).then((value) => {
+        ).catch(()=> {
+            console.log("error handling just for the previous then");
+        }).then((value) => {
             console.log(value);
             value.purposely.throwerror;
         }).catch(err => {
