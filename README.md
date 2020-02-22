@@ -14,7 +14,8 @@ features of es6
 10. Commit the staged file by `git commit -m "add package.json"`
 11. For first time git push fire the command ` git push --set-upstream origin master`
 12. install npm Express `npm install express`
-12. install npm Concurrently `npm install concurrently`
+13. install npm Concurrently `npm install concurrently`
+14. install http-server `npm install http-server`
 14. Add the following npm code for start node server
 ```javascript
 "scripts": {
