@@ -16,7 +16,7 @@ features of es6
 12. install npm Express `npm install express`
 13. install npm Concurrently `npm install concurrently`
 14. install http-server `npm install http-server`
-14. Add the following npm code for start node server
+15. Add the following npm code for start node server
 ```javascript
 "scripts": {
     "test": "test",
@@ -24,7 +24,7 @@ features of es6
     "open": "concurrently \"http-server -o -a localhost -p 3000\" \"open http://localhost:3000\""
 },
 ```
-15. Add the following code to `index.js` to make the file serve the html in node server
+16. Add the following code to `index.js` to make the file serve the html in node server
 ```javascript
 const express = require('express');
 
@@ -39,7 +39,7 @@ app.get('/', (req, res) => {
 
 app.listen(port, () => console.log(`listening on port ${port}!`));
 ```
-16. Add an `index.html` file
+17. Add an `index.html` file
 
 ## Code explanation
 
