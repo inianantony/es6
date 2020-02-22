@@ -1,8 +1,6 @@
 # es6
 features of es6
 
-# Step 1
-
 ## Create a Node js project
 1. create a new directory `mkdir es6`
 2. init the folder for npm package `npm init`
