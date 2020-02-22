@@ -14,7 +14,8 @@ features of es6
 10. Commit the staged file by `git commit -m "add package.json"`
 11. For first time git push fire the command ` git push --set-upstream origin master`
 12. install npm Express `npm install express`
-13. Add the following npm code for start node server
+12. install npm Concurrently `npm install concurrently`
+14. Add the following npm code for start node server
 ```javascript
 "scripts": {
     "test": "test",
@@ -22,7 +23,7 @@ features of es6
     "open": "concurrently \"http-server -o -a localhost -p 3000\" \"open http://localhost:3000\""
 },
 ```
-14. Add the following code to `index.js` to make the file serve the html in node server
+15. Add the following code to `index.js` to make the file serve the html in node server
 ```javascript
 const express = require('express');
 
@@ -37,7 +38,7 @@ app.get('/', (req, res) => {
 
 app.listen(port, () => console.log(`listening on port ${port}!`));
 ```
-15. Add an `index.html` file
+16. Add an `index.html` file
 
 ## Code explanation
 
