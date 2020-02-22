@@ -32,3 +32,7 @@ app.get('/', (req, res) => {
 app.listen(port, () => console.log(`listening on port ${port}!`));
 ```
 7. Add an `index.html` file
+
+## Code explanation
+
+1. `promise.js` file explaining the concepts of promise
