@@ -1,61 +1,69 @@
 <html>
-    <head>
-        <title>Number Functions</title>
-    </head>
-    <body>
+
+<head>
+    <title>Number Functions</title>
+</head>
+
+<body>
+    <div style="float: left; position: relative;">
         <pre>
-            > Number.isInteger(1.05)
-            false
-            > Number.isInteger(1)
-            true
-          
-            > Number.isInteger(-3.1)
-            false
-            > Number.isInteger(-3)
-            true
-            
-            Number.isSafeInteger(number)
-            Number.MIN_SAFE_INTEGER
-            Number.MAX_SAFE_INTEGER
+> Number.isInteger(1.05)
+false
+> Number.isInteger(1)
+true
 
-            > isNaN('???')
-            true
-            > Number.isNaN('???')
-            false
+> Number.isInteger(-3.1)
+false
+> Number.isInteger(-3)
+true
 
-            > Math.sign(-8)
-            -1
-            > Math.sign(0)
-            0
-            > Math.sign(3)
-            1
+Number.isSafeInteger(number)
+Number.MIN_SAFE_INTEGER
+Number.MAX_SAFE_INTEGER
 
-            Math.trunc(3.1)
-            3
-            > Math.trunc(3.9)
-            3
-            > Math.trunc(-3.1)
-            -3
-            > Math.trunc(-3.9)
-            -3
+> isNaN('???')
+true
+> Number.isNaN('???')
+false
 
-            > Math.log10(100)
-            2
+> Math.sign(-8)
+-1
+> Math.sign(0)
+0
+> Math.sign(3)
+1
+            </pre>
+    </div>
+    <div style="float: right; position: relative;">
+        <pre>
+Math.trunc(3.1)
+3
+> Math.trunc(3.9)
+3
+> Math.trunc(-3.1)
+-3
+> Math.trunc(-3.9)
+-3
 
-            hexadecimal integers:
-            > 0x9
-            9
-            Binary literals 
-            > 0b11
-            3
-            Octal literals 
-            > 0o7
-            7
+> Math.log10(100)
+2
 
-            > Number.isFinite(123)
-            true
-            > Number.isFinite(-Infinity)
-            false
+hexadecimal integers:
+> 0x9
+9
+Binary literals 
+> 0b11
+3
+Octal literals 
+> 0o7
+7
+
+> Number.isFinite(123)
+true
+> Number.isFinite(-Infinity)
+false
         </pre>
-    </body>
+    </div>
+</body>
+
 </html>
