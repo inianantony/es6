@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Symbols</title>
+</head>
+
+<body>
+    <div style="float: left; position: relative;">
+        <pre>
+Symbols are a new primitive type in ECMAScript 6
+const mySymbol = Symbol('mySymbol');
+//mySymbol is just the description of the symbol
+
+const COLOR_RED    = Symbol('Red');
+const COLOR_GREEN  = Symbol('Green');
+function getComplement(color) {
+    switch (color) {
+        case COLOR_RED:
+            return COLOR_GREEN;
+    }
+}
+
+If we used string to represent red and green , any variable with the same value can be passed to 
+function and it will match, but using symbol, the same symbol has to be passed
+            </pre>
+    </div>
+    <div style="float: right; position: relative;">
+        <pre>
+        </pre>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>String Functions</title>
+</head>
+
+<body>
+    <div style="float: left; position: relative;">
+        <pre>
+> 'hello'.startsWith('hell')
+true
+> 'hello'.endsWith('ello')
+true
+> 'hello'.includes('ell')
+true
+
+> 'hello'.startsWith('ello', 1)
+true
+> 'hello'.endsWith('hell', 4)
+true
+
+> 'hello'.includes('ell', 1)
+true
+> 'hello'.includes('ell', 2)
+false
+
+> 'doo '.repeat(3)
+'doo doo doo '
+            </pre>
+    </div>
+    <div style="float: right; position: relative;">
+        <pre>
+// String interpolation via template literals (in backticks)
+const first = 'Jane';
+const last = 'Doe';
+console.log(`Hello ${first} ${last}!`);
+    // Hello Jane Doe!
+
+// Template literals also let you create strings with multiple lines
+const multiLine = `
+This is
+a string
+with multiple
+lines`;
+
+console.log('\u{1F680}');    // ES6: single code point
+console.log('\uD83D\uDE80'); // ES5: two code units
+
+for (const ch of 'abc') {
+    console.log(ch);
+}
+// Output:
+// a
+// b
+// c
+
+const chars = [...'abc'];
+    // ['a', 'b', 'c']
+
+> String.raw`\n` === '\\n' //backslashes are not interpreted
+true
+        </pre>
+    </div>
+</body>
+
+</html>
