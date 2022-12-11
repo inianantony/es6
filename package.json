@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/inianantony/es6#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "concurrently": "^5.0.2",
